@@ -1,102 +1,73 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-.navbar::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    top: 2;
-    left: 0;
-    background-color: #5834AB;
-}
-
-.navbar {
-    background-color: #FCFCFC;
+nav {
+    background: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center; /* Center the navbar text */
-    border-bottom: 2px solid #818B92
 }
 
-.navbar h1 {
-    margin: 0;
-    font-size: 24px;
-    text-align: center; /* Center the navbar title */
-}
-
-.navbar ul {
+nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
-    margin: 0;
-    text-align: center; /* Center the navbar links */
 }
 
-.nav-item {
-    display: inline;
-    margin-right: 20px;
+nav li {
+    margin: 0 20px;
 }
 
-.navbar a {
+nav a {
     text-decoration: none;
-    color: #818B92;
+    color: #fff;
+    font-weight: bold;
 }
 
-/* Style for the active page link */
-.nav-item.active a {
-    color: #5834AB;
+nav a.active {
+    color: purple;
 }
 
-.left-section {
-    background-color: #fff;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
     padding: 20px;
-    text-align: center;
 }
 
-
-.image-container img {
+.profile-picture {
+    background: url('profile-picture.jpg') center/cover;
     width: 200px;
     height: 200px;
-    border: 2px solid purple; /* Add a purple border to the image */
-    border-radius: 50%; /* Ensure the image within the circular border */
+    border-radius: 50%;
+}
+
+.profile-details {
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.content {
+    margin: 0 20px;
 }
 
 h2 {
-    margin-top: 10px;
-}
-.left-section {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    border-radius: 10px;
-}
-
-.main-content {
-    width: 65%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
-
-    .navbar.active ul {
-        display: block;
-    }
+    font-size: 24px;
+    color: #333;
 }
