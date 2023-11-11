@@ -7,5 +7,5 @@ Put the address to your website here. Use this markdown format:
 example:
 
 ```bash
-[my website](https://patrick-abel.github.io)
+[my website](https://patrickcabel.github.io/patrick-abel/)
 ```
